@@ -1,0 +1,108 @@
+/* c:\js\shop_app\myshop\src\components\Cart.css */
+.cart-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between title and home link */
+    align-items: center; /* Center vertically */
+    background-color: #343a40; /* Dark gray background for header */
+    color: white; /* White text color */
+    padding: 15px 20px; /* Padding for header */
+    border-bottom: 2px solid #ccc; /* Bottom border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.cart-items {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.cart-item-image {
+    width: 50px; /* Small image size */
+    height: 50px; /* Small image size */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.cart-item-details {
+    flex-grow: 1; /* Allow details to take up remaining space */
+}
+
+.cart-item-title {
+    font-weight: bold;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Button styles */
+.cart-item-buttons {
+    display: flex; /* Use flexbox for button layout */
+    gap: 5px; /* Space between buttons */
+}
+
+.cart-item-buttons button {
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 8px; /* Smaller padding for compact size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    font-size: 14px; /* Smaller font size */
+    width: 30px; /* Set a fixed width for buttons */
+    text-align: center; /* Center text within the button */
+}
+
+/* Add button styles */
+.cart-item-buttons .add-to-cart {
+    background-color: #28a745; /* Green background */
+}
+
+/* Remove button styles */
+.cart-item-buttons .remove-from-cart {
+    background-color: #dc3545; /* Red background */
+}
+
+/* Hover effects for buttons */
+.cart-item-buttons button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Hover effects for Add button */
+.cart-item-buttons .add-to-cart:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Hover effects for Remove button */
+.cart-item-buttons .remove-from-cart:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
